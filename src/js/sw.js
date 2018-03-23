@@ -1,9 +1,11 @@
 self.addEventListener("install", function() {
-  console.log('ServiceWorker Installed!')
+  alert('ServiceWorker Installed!')
 });
 
 self.addEventListener('activate', function() {
-  console.log("ServiceWorker Activated!")
+  alert("ServiceWorker Activated!")
 });
 
-self.addEventListener('fetch', function() {});
+self.addEventListener('fetch', function() {
+  alert("ServiceWorker Fetch!");
+});

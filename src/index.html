@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <script>
     if('serviceWorker' in window.navigator) {
-      navigator.serviceWorker.register('./js/sw.js').then(function() {
-        console.log("ServiceWorker is Registered!");
+      navigator.serviceWorker.register('js/sw.js').then(function() {
+        alert("ServiceWorker is Registered!");
       });
     } else {
       alert("Service Worker is not found :(");
@@ -23,6 +24,6 @@
   <button id="change-button">Change!</button>
   <button id="detail">詳しく</button>
   
-  <script src="./js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
