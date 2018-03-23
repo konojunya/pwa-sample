@@ -10,7 +10,7 @@
   <script>
     if('serviceWorker' in window.navigator) {
       navigator.serviceWorker.register('js/sw.js').then(function() {
-        alert("ServiceWorker is Registered!");
+        console.log("ServiceWorker is Registered!");
       });
     } else {
       alert("Service Worker is not found :(");
