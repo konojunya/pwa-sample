@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="manifest" href="./manifest.json">
+  <script>
+    if('serviceWorker' in window.navigator) {
+      navigator.serviceWorker.register('./js/sw.js').then(function() {
+        console.log("ServiceWorker is Registered!");
+      });
+    } else {
+      alert("Service Worker is not found :(");
+    }
+  </script>
+  <title>PWA Sample</title>
+</head>
+<body>
+  <h1>Hello PWA Sample!</h1>
+  <div class="fruit"></div>
+  <button id="change-button">Change!</button>
+  <button id="detail">詳しく</button>
+  
+  <script src="./js/index.js"></script>
+</body>
+</html>
